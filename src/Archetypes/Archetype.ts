@@ -1,23 +1,29 @@
-export default class Archetype {
-  private name: string;
-  private special: number;
-  private cost: number;
+export default abstract class Archetype {
+  protected _name: string;
+  protected _special: number;
+  protected _cost: number;
 
   constructor(name:string) {
-    this.name = name;
-    this.special = 0;
-    this.cost = 0;
+    this._name = name;
+    this._special = 0;
+    this._cost = 0;
   }
 
-  getName() {
-    return this.name;
+  get name() {
+    return this._name;
   }
 
-  getSpecial() {  
-    return this.special;
+  get special() {  
+    return this._special;
   }
 
-  getCost() {
-    return this.cost;
+  get cost() {
+    return this._cost;
   }
+
+  static createdArchetypeInstances(): number {
+    throw new Error('Not implemented');
+  }
+
+  abstract get energyType(): EnergyType;
 }

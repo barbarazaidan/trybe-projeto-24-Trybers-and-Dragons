@@ -16,6 +16,8 @@ export default abstract class Race {
     return this._dexterity;
   }
 
+  // Esse número corresponde à quantidade de instâncias criadas a partir das classes estendidas da classe Race.
+  // Então, aqui coloco somente a descrição do método, mas não a implementação.
   static createdRacesInstances(): number {
     throw new Error('Not implemented');
   }
