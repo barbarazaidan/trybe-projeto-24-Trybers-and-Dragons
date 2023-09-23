@@ -12,7 +12,7 @@ export default class Dwarf extends Race {
     Dwarf._instancesCount += 1;
   }
 
-  get maxLifePoints() {
+  get maxLifePoints(): number {
     return this.__lifePoints;
   }
 

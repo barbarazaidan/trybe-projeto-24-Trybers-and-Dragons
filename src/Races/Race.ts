@@ -8,11 +8,11 @@ export default abstract class Race {
     this._dexterity = dexterity;
   }
 
-  get name() {
+  get name(): string {
     return this._name;
   }
 
-  get dexterity() {
+  get dexterity(): number {
     return this._dexterity;
   }
 

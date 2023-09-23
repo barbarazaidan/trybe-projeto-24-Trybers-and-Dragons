@@ -10,7 +10,7 @@ export default class Halfling extends Race {
     Halfling._instancesCount += 1;
   }
 
-  get maxLifePoints() {
+  get maxLifePoints(): number {
     return this.__lifePoints;
   }
 
