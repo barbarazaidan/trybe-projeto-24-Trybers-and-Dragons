@@ -63,6 +63,7 @@ export default class Character {
     enemy.receiveDamage(this._strength);
   }
 
+  // função não avaliada, posso colocar a condição que eu achar interessante
   special?(enemy: Fighter): void; 
 
   levelUp(): void {
